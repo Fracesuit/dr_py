@@ -2,15 +2,12 @@ version: '3'
 services:
   drpy2:
     image: drpy2
+    tty: true
     build:
       context: dr_py
       dockerfile: dockerfile
     container_name: drpy2
-    volumes:
-      - ./dr_py:/root/sd/pywork/dr_py
     ports:
       - "9001:9001"
       - "5705:5705"
-    environment:
-      - TZ=Asia/Shanghai
     restart: always
