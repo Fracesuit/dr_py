@@ -3,7 +3,7 @@ services:
   drpy2:
     image: drpy2
     build:
-      context: dr_py
+      context: .
       dockerfile: dockerfile
     container_name: drpy2
     ports:
