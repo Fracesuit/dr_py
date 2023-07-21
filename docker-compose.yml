@@ -4,7 +4,7 @@ services:
     image: drpy2
     tty: true
     build:
-      context: dr_py
+      context: .
       dockerfile: dockerfile
     container_name: drpy2
     ports:
